@@ -24,3 +24,12 @@ The end-goal is to make autoreload work with [{rhino}]-based applications.
    modules!)
 
 [`main.R` module]: main-module/
+
+### [Namespaced `main.R` module][]
+
+1. Run `shiny::runApp("main-module-ns")`
+1. Modify anything: UI, server function, and/or variable within `main-module-ns/`
+1. Changes will be reflected within the app (despite {box} caching, nested
+   modules, and namespace!)
+
+[Namespaced `main.R` module]: main-module-ns/
