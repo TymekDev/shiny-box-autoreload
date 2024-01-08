@@ -2,9 +2,12 @@ box::use(
   shiny[actionButton, fluidPage, observeEvent, renderText, shinyApp, textOutput],
 )
 
-box::use(./module)
+box::use(
+  ./module,
+)
 
 options(shiny.autoreload = TRUE)
+
 
 env <- environment() # Store environment where box::use is called
 shiny:::autoReloadCallbacks$register(function() {
