@@ -15,3 +15,12 @@ The end-goal is to make autoreload work with [{rhino}]-based applications.
 1. Changes will be reflected within the app (despite {box} caching!)
 
 [Basic]: basic/
+
+### [`main.R` module][]
+
+1. Run `shiny::runApp("main-module")`
+1. Modify anything: UI, server function, and/or variable within `main-module/`
+1. Changes will be reflected within the app (despite {box} caching and nested
+   modules!)
+
+[`main.R` module]: main-module/
