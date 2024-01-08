@@ -6,7 +6,6 @@ box::use(
   ./module,
 )
 
-# NOTE: wrapping it in a function works fine as well
 #' @export
 ui <- function(id) {
   ns <- NS(id)
